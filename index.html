@@ -3,97 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assingment01</title>
-<!-- <link rel="stylesheet" href="style.css"> -->
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-}
+    <title>Assignment01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-    background-color: #d7e7f4;
-}
-.navbar{
-    width: fit-content;
-    position: relative;
-    left: 13%;
-    right: 15%;
+        body{
+            background-color: #d7e7f4;
+        }
 
-}
+        .main{
+            margin: auto;
+           width: 75%;
+           height: 100vh;
+           background-color: white;
+            
+        }
 
-.main{
-    width: 958px;
-    height:100vh;
-    background: white;
+        /* box-1 */
+        .box1 {
+            overflow: hidden;
+        }
 
-}
+        .logo-img {
+            padding-left: 22px;
+        }
 
-
-
-
-.img1{
- margin-left: 22px;
- height: 50%;
- width: 100%;
-}
-
-input{ 
-    width: 200px;
-    height: 30px;
-}
-
+        /* box-2 */
+        .box2 {
+            margin-right: 22px;
+            padding-right: 22px;
+            float: right;
+        }
 
 a{
-    text-align: right;
     padding: 2px;
-    margin-top: 50px;
+    text-align: right;
+    color: #007baf;
 }
+
+input{
+    height: 24px;
+
+}
+
+.right-section{
+    height: 100px;
+    width: 300px;
+    text-align:right;
+
+}
+
+
+.right-section div {
+    margin-top: 0;
+}
+
+input {
+    height: 24px;
+    margin: 0;
+}
+
+.se{
+    height: 24px;
+    position: relative;
+    top: 8px;
+}
+
+
 .hrow{
     position: absolute;
     top: 40%;
-    color: black;
-    width: 954px;
-    border: 2px solid black;
-}
-.main2{
-    float: right;
-    padding-right: 66px;
-}
-
-
-@media screen {
-    .navbar{
-    width: fit-content;
-    position: relative;
-
+height:0px;
+width: 954px;
+border: 2px solid black;
+background-color: black;
 
 }
 
-}
+@media screen and (max-width: 768px) {
+            .main {
+                width: 100%;
+            }
 
-</style>
+            .box2 {
+                float: none;
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .right-section {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hrow {
+                width: 100%;
+            }
+        }
+    
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="main" >
-            <div class="img1">
-            <img class="logo" src="./Img/logo.png" alt="Logo">  
-            <div class="main2" >
-                <a href="#"><div>
-                    <div class="logo-2">
-                    Login to my account
-                </div></a>
-               <div>
-                <input type="search" name="" placeholder="Search entire store here..." id="">
-                <img src="./Img/search.png" alt="Logo">
-               </div>
-               </div>
+    <div class="main">
+        <div class="box1">
+            <img class="logo-img" src="./Img/logo.png" alt="">
+            <div class="box2">
+              <a href="#"><div>Login to my account</div></a>
+            <div class="right-section">
+            <div> 
+                <input type="search"  placeholder="Search entire store here...." name="" id="">
+                <img class="se"  src="./Img/search.png" alt=""></div>
             </div>
-            </div>
-           
-            <div class="hrow"></div>
+    
         </div>
+        <div class="hrow"></div>
+    
     </div>
 </body>
 </html>
