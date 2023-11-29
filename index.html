@@ -4,20 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment01</title>
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d7e7f4;
+}
+.navbar{
+    width: fit-content;
+    position: relative;
+    left: 13%;
+    right: 15%;
+
+}
+
+.main{
+    width: 958px;
+    height:100vh;
+    background: white;
+
+}
+
+
+
+
+.img1{
+ margin-left: 22px;
+ height: 50%;
+ width: 100%;
+}
+
+input{ 
+    width: 200px;
+    height: 30px;
+}
+
+
+a{
+    text-align: right;
+    padding: 2px;
+    margin-top: 50px;
+}
+.hrow{
+    position: absolute;
+    top: 40%;
+    color: black;
+    width: 954px;
+    border: 2px solid black;
+}
+.main2{
+    float: right;
+    padding-right: 66px;
+}
+
+
+@media screen {
+    .navbar{
+    width: fit-content;
+    position: relative;
+
+
+}
+
+}
+
+</style>
 </head>
 <body>
     <div class="navbar">
         <div class="main" >
             <div class="img1">
-                <img src="./Img/logo.png" alt="Logo">
-              
-                <div class="img2">
-                    <div><a class="login" href="#">Login to my account</a></div>
-                    <input type="button" placeholder="Search entire store here....">
-                    <img src="./Img/search.png" alt="Logo">
-                </div>
+            <img class="logo" src="./Img/logo.png" alt="Logo">  
+            <div class="main2" >
+                <a href="#"><div>
+                    <div class="logo-2">
+                    Login to my account
+                </div></a>
+               <div>
+                <input type="search" name="" placeholder="Search entire store here..." id="">
+                <img src="./Img/search.png" alt="Logo">
+               </div>
+               </div>
             </div>
+            </div>
+           
+            <div class="hrow"></div>
         </div>
     </div>
 </body>
